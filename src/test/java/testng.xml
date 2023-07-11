@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="wakedata">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+
+    <test verbose="1" name="XX测试报告">
+        <classes>
+            <class name="com.testapi.testCases.TestCases"/>
+            <class name="com.testapi.generic.BuyCase"/>
+            <class name="com.testapi.generic.GetSkuCase"/>
+            <class name="com.testapi.generic.LoginCase"/>
+            <class name="com.testapi.generic.RegisterCase"/>
+            <class name="com.testapi.generic.UserInfoCase"/>
+            <class name="com.testapi.generic.UserListCase"/>
+        </classes>
+    </test>
+</suite>
