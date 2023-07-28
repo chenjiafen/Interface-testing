@@ -21,5 +21,6 @@ public class TestMain {
 
       tng.setTestSuites(suites);
       tng.run();
+
    }
 }

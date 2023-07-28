@@ -38,7 +38,7 @@ public class HttpRequest {
 	private HttpMethod method;
 	private String contentType;
 	private String destination;
-	private String protocol = "http";
+	private String protocol = "https";
 	private String host = "localhost";
 	private Integer port;
 	private String path = "/";
@@ -68,7 +68,8 @@ public class HttpRequest {
 		SSLConnectionSocketFactory sslsf = null;
 		try {
 			sslsf = new SSLConnectionSocketFactory(builder.build(),
-					new String[] { "SSLv2Hello", "SSLv3", "TLSv1", "TLSv1.2" }, null, NoopHostnameVerifier.INSTANCE);
+//					new String[] { "SSLv2Hello", "SSLv3", "TLSv1", "TLSv1.2" }, null, NoopHostnameVerifier.INSTANCE);
+					new String[] { "SSLv3", "TLSv1", "TLSv1.1", "TLSv1.2" }, null, NoopHostnameVerifier.INSTANCE);
 		} catch (KeyManagementException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

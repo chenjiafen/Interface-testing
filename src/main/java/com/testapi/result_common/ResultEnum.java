@@ -2,7 +2,7 @@ package com.testapi.result_common;
 
 public enum ResultEnum {
     SUCCESS(0, "执行成功！"),
-    SUCCESS_MESSAGE(200,"验证码已发送"),
+    SUCCESS_MESSAGE(200,"发送成功"),
     SUCCESS_MESSAGE_SKU(0,"success"),
     SUCCESS_MESSAGE_REGISTER(0,"注册成功"),
     FAIL(-99, "失败"),

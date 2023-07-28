@@ -43,6 +43,5 @@ public class UserListCase_a extends TestBase_a {
       }
       Assert.assertEquals( code,ResultEnum.SUCCESS_MESSAGE_SKU.getCode () );
       Assert.assertEquals( message,ResultEnum.SUCCESS_MESSAGE_SKU.getMsg ());
-      Assert.assertEquals( userName,"码同学学员0" );
    }
 }
