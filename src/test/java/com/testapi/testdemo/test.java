@@ -3,6 +3,7 @@ package com.testapi.testdemo;
 import com.welab.iam.service.verify.impl.Signature;
 
 import static com.welab.iam.service.verify.impl.Signature.MD5;
+import static org.apache.commons.codec.digest.MessageDigestAlgorithms.MD5;
 
 public class test {
     public static void main(String[] args) {

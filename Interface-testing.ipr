@@ -21,14 +21,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Interface-testing" target="6" />
+      <module name="Interface-testing" target="7" />
     </bytecodeTargetLevel>
   </component>
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-  </component>
-  <component name="EntryPointsManager">
-    <entry_points />
   </component>
   <component name="ExportToHTMLSettings">
     <option name="PRINT_LINE_NUMBERS" value="false" />
@@ -468,6 +465,13 @@
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/velocity/velocity/1.4/velocity-1.4-sources.jar!/" />
       </SOURCES>
+    </library>
+    <library name="Signature">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/lib/Signature.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
     </library>
   </component>
 </project>
