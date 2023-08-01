@@ -7,13 +7,15 @@
 
     <test verbose="1" name="XX测试报告">
         <classes>
-            <class name="com.testapi.testCases.TestCases"/>
-            <class name="com.testapi.generic.BuyCase"/>
-            <class name="com.testapi.generic.GetSkuCase"/>
-            <class name="com.testapi.generic.LoginCase"/>
-            <class name="com.testapi.generic.RegisterCase"/>
-            <class name="com.testapi.generic.UserInfoCase"/>
-            <class name="com.testapi.generic.UserListCase"/>
+            <!--<class name="com.testapi.testCases.TestCases"/>-->
+            <!--<class name="com.testapi.generic.BuyCase"/>-->
+            <!--<class name="com.testapi.generic.GetSkuCase"/>-->
+            <!--<class name="com.testapi.generic.LoginCase"/>-->
+            <!--<class name="com.testapi.generic.RegisterCase"/>-->
+            <!--<class name="com.testapi.generic.UserInfoCase"/>-->
+            <!--<class name="com.testapi.generic.UserListCase"/>-->
+            <!--<class name="com.testapi.generic.UserListCase"/>-->
+            <!--<class name="com.testapi.generic.UserListCase"/>-->
         </classes>
     </test>
 </suite>

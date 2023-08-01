@@ -1,8 +1,9 @@
 package com.testapi.testdemo;
 
-import com.welab.iam.service.verify.impl.Signature;
+import com.testapi.utils.Signature;
 
-import static com.welab.iam.service.verify.impl.Signature.MD5;
+import static com.testapi.utils.Signature.MD5;
+import static org.apache.commons.codec.digest.MessageDigestAlgorithms.MD5;
 
 public class test {
     public static void main(String[] args) {
@@ -21,7 +22,7 @@ public class test {
 
 
         String oriDatass = code + "&" + timestamp + "&" + salt;
-        String s = Signature.MD5(Signature.MD5(oriDatass) + salt);
+        String s = MD5(MD5(oriDatass) + salt);
         System.out.println("s"+s);
 
 

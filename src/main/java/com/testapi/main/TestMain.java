@@ -17,7 +17,7 @@ public class TestMain {
       TestNG tng = new TestNG();
       System.setProperty(ESCAPE_PROPERTY, "false");
       List<String> suites = new ArrayList<String> ();
-      suites.add(path+"/src/test/java/testng.xml");
+      suites.add(path+"//src//test//java//testng.xml");
 
       tng.setTestSuites(suites);
       tng.run();

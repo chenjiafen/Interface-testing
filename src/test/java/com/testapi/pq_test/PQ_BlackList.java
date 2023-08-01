@@ -1,9 +1,8 @@
-package com.testapi.quanzi;
+package com.testapi.pq_test;
 
 import com.alibaba.fastjson.JSONObject;
 import com.testapi.common.QZ_Api;
 import com.testapi.http.HttpMethod;
-import com.testapi.http.HttpRequest;
 import com.testapi.http.HttpResponse;
 import com.testapi.result_common.ResultEnum;
 import io.qameta.allure.Description;
@@ -12,30 +11,30 @@ import io.qameta.allure.SeverityLevel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+/**
+ * @author: chenjiafeng
+ * @description 黑名单列表
+ * @Date: 2023/7/28 17:13
+ */
+public class PQ_BlackList extends TestBase {
 
-public class clear_socket extends QZ_login{
-
-    @Description("clear_socket")
+    @Description("黑名单列表")
     @Severity(SeverityLevel.BLOCKER)
     @Test
-    public void clea_test(){
-        QZ_login qz_login = new QZ_login();
-        qz_login.sendCode();
-        qz_login.loginStatusByPhone();
-        qz_login.login();
-        String pqtoken = qz_login.token;
-        HttpResponse response =new HttpRequest().method ( HttpMethod.POST )
+    public void blackList(String pqtoken){
+        HttpResponse response = request.method ( HttpMethod.GET )
                 .header("Content-Type","application/json")
-                .header("pqtoken",pqtoken )
-                .host ( QZ_Api.Base_URL ).path ( QZ_Api.clear_url )
-                .data("").send();
+                .header("pqtoken",pqtoken)
+                .host ( QZ_Api.Base_URL ).path ( QZ_Api.blackList_url )
+                .send();
         String body = response.body ();
-        log.info("body========="+body);
+        log.info("body=="+body);
         log.info ( response.statusLine() );
         JSONObject jsonObject = JSONObject.parseObject ( body );
         Integer code = jsonObject.getInteger ( "code" );
-
-        log.info("token===="+ pqtoken);
+        String message =  jsonObject.getString ( "msg" );
+        log.info ( "==="+code );
         Assert.assertEquals(code, ResultEnum.SUCCESS_MESSAGE.getCode ());
+
     }
 }

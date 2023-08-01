@@ -45,7 +45,4 @@ public class CookieStore {
 		return accum.toString();
 	}
 
-	public static void main(String[] args) {
-		System.out.printf("fasdfaf");
-	}
 }

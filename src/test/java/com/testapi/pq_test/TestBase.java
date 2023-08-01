@@ -1,7 +1,8 @@
-package com.testapi.quanzi;
+package com.testapi.pq_test;
 
 import com.testapi.http.HttpRequest;
 import com.testapi.restful.TestBase_a;
+import com.testapi.utils.log;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.testng.annotations.BeforeClass;
 

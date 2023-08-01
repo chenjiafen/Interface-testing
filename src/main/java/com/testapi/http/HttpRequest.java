@@ -115,7 +115,6 @@ public class HttpRequest {
 		req.method(HttpMethod.GET).dest(destination);
 		return req;
 	}
-
 	/**
 	 * 请求的方式post
 	 * @param destination

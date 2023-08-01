@@ -1,19 +1,19 @@
-package com.testapi.quanzi;
+package com.testapi.pq_test;
 import com.alibaba.fastjson.JSONObject;
 import com.testapi.common.QZ_Api;
 import com.testapi.http.HttpMethod;
 import com.testapi.http.HttpRequest;
 import com.testapi.http.HttpResponse;
 import com.testapi.result_common.ResultEnum;
+import com.testapi.utils.Signature;
 import com.testapi.utils.log;
-import com.welab.iam.service.verify.impl.Signature;
 import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
 
-public class QZ_login extends TestBase {
+public class PQ_login extends TestBase {
 
 
     String phone="17688732018";
