@@ -15,7 +15,7 @@
             <!--<class name="com.testapi.generic.UserInfoCase"/>-->
             <!--<class name="com.testapi.generic.UserListCase"/>-->
             <!--<class name="com.testapi.generic.UserListCase"/>-->
-            <!--<class name="com.testapi.generic.UserListCase"/>-->
+            <class name="com.testapi.pq_test.TestCase"/>
         </classes>
     </test>
 </suite>

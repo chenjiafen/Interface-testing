@@ -23,11 +23,6 @@ public class PQ_clear  extends TestBase {
     @Severity(SeverityLevel.BLOCKER)
     @Test
     public void clear(String pqtoken){
-//        PQ_login qz_login = new PQ_login();
-//        qz_login.sendCode();
-//        qz_login.loginStatusByPhone();
-//        qz_login.login();
-//        String pqtoken = qz_login.token;
         HttpResponse response = request.method ( HttpMethod.POST )
                 .header("Content-Type","application/json")
                 .header("pqtoken",pqtoken)

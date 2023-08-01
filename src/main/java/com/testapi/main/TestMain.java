@@ -15,9 +15,9 @@ public class TestMain {
    private static String path=System.getProperty("user.dir");
    public static void main(String[] args) {
       TestNG tng = new TestNG();
-      System.setProperty(ESCAPE_PROPERTY, "false");
+      System.setProperty(ESCAPE_PROPERTY, "true");
       List<String> suites = new ArrayList<String> ();
-      suites.add(path+"//src//test//java//testng.xml");
+      suites.add("D:\\chenjiafeng\\Interfacetesting\\Interfacetesting\\src\\test\\java\\testng.xml");
 
       tng.setTestSuites(suites);
       tng.run();
