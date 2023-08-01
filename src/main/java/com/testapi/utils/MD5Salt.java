@@ -3,6 +3,9 @@ package com.testapi.utils;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/**
+ * md5加密，进行登录接口验签
+ */
 public class MD5Salt {
     public static String md5Salt(String password, String salt) {
         try {

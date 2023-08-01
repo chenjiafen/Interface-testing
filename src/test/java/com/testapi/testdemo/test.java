@@ -22,7 +22,7 @@ public class test {
 
 
         String oriDatass = code + "&" + timestamp + "&" + salt;
-        String s = MD5(MD5(oriDatass) + salt);
+        String s = Signature.MD5(Signature.MD5(oriDatass) + salt);
         System.out.println("s"+s);
 
 
