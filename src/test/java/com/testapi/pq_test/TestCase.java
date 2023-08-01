@@ -13,7 +13,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
-public class TestCase extends PQ_login {
+public class TestCase{
     String pqtoken;
     @Description("TestCase")
     @Severity(SeverityLevel.BLOCKER)
